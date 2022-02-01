@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make a Toaster!</title>
+</head>
+<body>
+<!-- some headings so that people can see what they should be doing -->
+<h1 for="toaster">Make your toaster!</h1>
+
+
+<!-- the form has the action which calls the function in the webStuff.py and the method is post -->
+<form id="toasters" action="/toasterResults" method="post">
+
+    <h2>Choose the color of the toaster!</h2>
+    <!-- color of the toaster drop down-->
+<select name="colorToaster" id="colorToaster">
+  <option value="red">Red</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+</select>
+
+<h2> How big do you want your toaster?</h2>
+    <!-- size of your toaster drop down -->
+<select name="sizeToaster" id="sizeToaster">
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+</select>
+
+<h4>Create the toaster from the mortal coil!</h4>
+     <!-- submit button so the page knows when to move on -->
+    <input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>
