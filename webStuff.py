@@ -16,8 +16,8 @@ def homePage():
 @app.route("/toasterResults", methods=["GET", "POST"])
 def toasterResults():
     # these take the results from the drop down boxes so that they can be used below
-    colorToasts = str(request.form('colorToaster'))
-    sizeToasts = str(request.form('sizeToaster'))
+    colorToasts = str(request.form['colorToaster'])
+    sizeToasts = str(request.form['sizeToaster'])
 
     # the following if statements will check to see what the color and size were when then
     # the submit button was clicked so that it can call the correct html form
